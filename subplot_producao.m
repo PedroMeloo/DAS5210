@@ -7,14 +7,14 @@ Jx = [];
 for i = 1:size(m, 2)
     
     %Usou-se a variável x constante como 1
-    Jm(i) = custo_producao_sapatos(m(i), 0.5);
+    Jm(i) = custo_producao_sapatos(m(i), 1);
     
 end
 
 for i = 1:size(x, 2)
     
     %Usou-se a variável m constante como 5
-    Jx(i) = custo_producao_sapatos(1, x(i));
+    Jx(i) = custo_producao_sapatos(5, x(i));
     
 end
 
